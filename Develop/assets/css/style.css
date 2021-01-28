@@ -21,9 +21,14 @@ body {
 }
 
 .header h1 .seo {
-    color: #000000;
-} 
-/* changed color because its hard to see and accessibility promotes high contrast  */
+    color: #d9dcd6;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+/*Accessibility talks about good contrast for visualy impaired I had changed the color on this but that would be more of a deisnger/company decision so to add some contrast I gave the highlighted SEO an outline to help give it some contrast */
 
 .header nav {
     padding-top: 15px;
@@ -31,10 +36,6 @@ body {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-}
-
-.header nav ul {
-    list-style-type: none;
 }
 
 .header nav ul li {
@@ -53,10 +54,11 @@ p {
 
 .hero {
     max-height: 800px !important;
-    /* added important to override the img max height 200px */
+    /* added important to override the img max height 200px that keeps the rest of the images to size  */
     width: 100%;
     margin-bottom: 25px;
     /* background-image: url("../images/digital-marketing-meeting.jpg"); */
+    /* took the image out of css to add an alt tag and make it a img class  */
     background-size: cover;
     background-position: center;
 }
@@ -91,7 +93,9 @@ p {
 .benefit-lead, .benefit-brand, .benefit-cost{
     margin-bottom: 32px;
     color: #ffffff;
+    text-align: center;
 }
+/* for clarity purposes I left all 3 classes so people looking at the html knew what sections they were in but they all include the same styling so listed them in this way so there weren't 3 sperate classes typed out with the same componets   */
 
 h3 {
     margin-bottom: 10px;
@@ -103,7 +107,7 @@ h3 {
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* for clarity purposes I left all 3 classes so people looking at the html knew what sections they were in but they all include the same styling so listed them in this way so there weren't 3 sperate classes typed out with the same componets   */
 
 .search-engine-optimization, .online-reputation-management, .social-media-marketing {
     margin-bottom: 20px;
@@ -113,6 +117,7 @@ h3 {
     background-color: #0072bb;
     color: #ffffff;
 }
+/* for clarity purposes I left all 3 classes so people looking at the html knew what sections they were in but they all include the same styling so listed them in this way so there weren't 3 sperate classes typed out with the same componets   */
 
 img{
     max-height: 200px;
@@ -128,8 +133,10 @@ h2 {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
-
-.footer h2 {
     font-size: 20px;
 }
+
+.footer h4{
+    font-size: 20px;
+}
+/* made h4 to follow header flow down the page for accessibility */
