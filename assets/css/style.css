@@ -8,6 +8,10 @@ body {
     background-color: #d9dcd6;
 }
 
+img{
+    max-height: 200px;
+}
+
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -53,8 +57,7 @@ p {
 }
 
 .hero {
-    max-height: 800px !important;
-    /* added important to override the img max height 200px that keeps the rest of the images to size  */
+    max-height: 800px;
     width: 100%;
     margin-bottom: 25px;
     /* background-image: url("../images/digital-marketing-meeting.jpg"); */
@@ -118,10 +121,6 @@ h3 {
     color: #ffffff;
 }
 /* for clarity purposes I left all 3 classes so people looking at the html knew what sections they were in but they all include the same styling so listed them in this way so there weren't 3 sperate classes typed out with the same componets   */
-
-img{
-    max-height: 200px;
-}
 
 h2 {
     margin-bottom: 20px;
